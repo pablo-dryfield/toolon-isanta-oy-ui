@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Switch, IconButton, Button, Menu, MenuItem, Box, Stack, Typography, Grid, styled } from '@mui/material';
+import { Toolbar, Switch, IconButton, Button, Box, Stack, Typography, Grid, styled } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const UnderlineButton = styled(Button)({
@@ -29,15 +29,6 @@ const UnderlineButton = styled(Button)({
 });
 
 const Navbar = () => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
-  const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
 
   const handleButtonClick = () => {
 
